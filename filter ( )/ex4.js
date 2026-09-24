@@ -8,4 +8,4 @@ const produtos = [
  const ativos = produtos.filter((a) => {
     return a.estoque > 0 && a.preco > 100;
  });
- console.log(ativos)
+ console.log(ativos);
