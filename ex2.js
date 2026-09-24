@@ -5,5 +5,7 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const maiusculo = produtos.map((m) => m.nome)
-console.log(`Nomes em maiusculo: ${maiusculo.join(`, `)}`);
+const reajuste = produtos.map((d) => {
+    return ( d.preco * 0.90  ) ;
+});
+console.log(`Valores reajustadors: ${reajuste.join(`, `)}`);
