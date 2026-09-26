@@ -5,6 +5,8 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const redu = produtos.reduce((acumulador, i) => acumulador + i.estoque, 0) ;
+const redu = produtos.reduce((totalis, produto) => {
+  return totalis + produto.estoque
+}, 0);
 
 console.log(redu)
