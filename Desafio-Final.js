@@ -27,6 +27,13 @@ function todosUsuariosMaioresDeIdade() {
     return usuarios.every((maior) => maior.idade >= 18);
 };
 
+function calcularMediaIdade() {
+    const soma = usuarios.reduce((totalis, usuario) => {
+        return totalis + usuario.idade;
+    }, 0);
+    return soma / usuarios.length;
+};
+
 console.log("============================================================");
 console.log(listarUsuarios());
 console.log("============================================================");
@@ -34,10 +41,16 @@ console.log(buscarUsuarioPorId());
 console.log("============================================================");
 console.log(listarUsuariosAtivos());
 console.log("============================================================");
+console.log("Existe algum usúario inativo? :")
 console.log(existeUsuarioInativo());
 console.log("============================================================");
+console.log("Todos os usúarios são maiores de idade? : ")
 console.log(todosUsuariosMaioresDeIdade());
 console.log("============================================================");
+console.log("Media das idades: ")
+console.log(calcularMediaIdade());
+console.log("============================================================");
+
 
 //1. listarUsuarios() — Use map() para retornar apenas nome e cargo de cada usuário.
 //2. buscarUsuarioPorId(id) — Use find() para buscar um usuário pelo ID informado.
