@@ -11,6 +11,9 @@ function listarUsuarios() {
     });
 };
 
+function buscarUsuarioPorId() {
+    return usuarios.find((usu) => usu.id ===3);
+}
 //1. listarUsuarios() — Use map() para retornar apenas nome e cargo de cada usuário.
 //2. buscarUsuarioPorId(id) — Use find() para buscar um usuário pelo ID informado.
 //3. listarUsuariosAtivos() — Use filter() para retornar apenas os usuários ativos.
@@ -19,8 +22,4 @@ function listarUsuarios() {
 //6. calcularMediaIdade() — Use reduce() para calcular a média de idade dos usuários.
 
 console.log(listarUsuarios());
-console.log(buscarUsuarioPorId(id));
-console.log(listarUsuariosAtivos());
-console.log(existeUsuarioInativo());
-console.log(todosUsuariosMaioresDeIdade());
-console.log(calcularMediaIdade());
+console.log(buscarUsuarioPorId());
