@@ -13,15 +13,19 @@ function listarUsuarios() {
 
 function buscarUsuarioPorId() {
     return usuarios.find((usu) => usu.id ===3);
-}
+};
 
 function listarUsuariosAtivos() {
     return usuarios.filter((oso) => oso.ativo )
-}
+};
 
 function existeUsuarioInativo() {
     return usuarios.some((uso) => uso.ativo === true )
-}
+};
+
+function todosUsuariosMaioresDeIdade() {
+    return usuarios.every((maior) => maior.idade >= 18);
+};
 
 console.log("============================================================");
 console.log(listarUsuarios());
@@ -32,8 +36,8 @@ console.log(listarUsuariosAtivos());
 console.log("============================================================");
 console.log(existeUsuarioInativo());
 console.log("============================================================");
-console.log(existeUsuarioInativo());
-
+console.log(todosUsuariosMaioresDeIdade());
+console.log("============================================================");
 
 //1. listarUsuarios() — Use map() para retornar apenas nome e cargo de cada usuário.
 //2. buscarUsuarioPorId(id) — Use find() para buscar um usuário pelo ID informado.
