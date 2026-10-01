@@ -8,4 +8,4 @@ const produtos = [
 const verificar = produtos.some((a) => {
     return a.ativo === false
 });
-console.log(verificar)
+console.log(verificar);

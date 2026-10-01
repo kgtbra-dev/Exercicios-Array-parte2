@@ -19,8 +19,9 @@ function listarUsuariosAtivos() {
     return usuarios.filter((oso) => oso.ativo )
 }
 
-
-
+function existeUsuarioInativo() {
+    return usuarios.some((uso) => uso.ativo === true )
+}
 
 console.log("============================================================");
 console.log(listarUsuarios());
@@ -29,7 +30,9 @@ console.log(buscarUsuarioPorId());
 console.log("============================================================");
 console.log(listarUsuariosAtivos());
 console.log("============================================================");
-
+console.log(existeUsuarioInativo());
+console.log("============================================================");
+console.log(existeUsuarioInativo());
 
 
 //1. listarUsuarios() — Use map() para retornar apenas nome e cargo de cada usuário.

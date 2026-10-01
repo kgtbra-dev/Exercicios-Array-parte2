@@ -9,4 +9,4 @@ const redu = produtos.reduce((totalis, produto) => {
   return totalis + ( produto.preco * produto.estoque ) 
 }, 0);
 
-console.log(redu)
+console.log(redu);

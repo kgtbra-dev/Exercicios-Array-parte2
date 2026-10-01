@@ -5,6 +5,6 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const verificar = produtos.some((v) => v > 3600 );
+const verificar = produtos.some((v) => v.preco > 3000 );
 
-console.log(verificar)
+console.log(verificar);
